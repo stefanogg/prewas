@@ -215,6 +215,8 @@ load_vcf_file <- function(vcf) {
   }
   
   geno_to_remove <- NULL # set geno_to_remove to NULL to avoid removing sites with pattern "/"
+  print("geno_to_remove is")
+  print(geno_to_remove)
 
   if (!is.null(geno_to_remove)) {
     warning(
